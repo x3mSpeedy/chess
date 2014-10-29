@@ -480,7 +480,7 @@ int Chess::getMove()
     {
         cout<<endl;
         cout << "OKAY BYE! Come back when you can stay longer..."<<endl<<endl;
-        exit(1);
+        exit(0);
     }
 
     int from_X = 0;
