@@ -15,4 +15,5 @@ for i in range (rng):
 		)
 
 print 'display'
+print 'help'
 print 'exit'
