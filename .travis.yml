@@ -6,6 +6,12 @@ python:
 before_install:
   sudo pip install gcovr
   
+env:
+  - NUM_MOVES=1
+  - NUM_MOVES=10
+  - NUM_MOVES=100
+  - NUM_MOVES=1000
+  
 script:
   - make compile
   - make test
