@@ -4,7 +4,8 @@ python:
   - "2.6"
   - "2.7"
 before_install:
-  sudo pip install gcovr
+  - sudo pip install gcovr
+  - sudo pip install cpp-coveralls
   
 env:
   - NUM_MOVES=10
@@ -19,6 +20,9 @@ script:
   - make coverage-xml
   - wc -l output.txt
   - tail -n 30 output.txt
+  
+after_success:
+  coveralls
   
 branches:
   only:
