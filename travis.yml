@@ -1,0 +1,22 @@
+
+language:
+  - cpp
+  - python
+python:
+  - "2.6"
+  - "2.7"
+compiler:
+  - clang
+  - gcc
+  
+before_install:
+  pip install gcovr
+  
+script:
+  make compile
+  make test
+  make coverage
+  
+branches:
+  only:
+    - master
