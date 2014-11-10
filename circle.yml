@@ -10,7 +10,10 @@ test:
     - make coverage-xml
     - wc -l output.txt
     - tail -n 30 output.txt
-    
+
+deployment:
+  post:
+    - coveralls
     
 machine:
   environment:
