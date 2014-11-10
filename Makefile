@@ -5,7 +5,8 @@ compile:
 
 test:
 	python generator.py $(NUM_MOVES) 8 > moves
-	./chess < moves
+	./chess < moves > output.txt
+	wc -l output.txt
   
 coverage: coverage-xml coverage-html
   
