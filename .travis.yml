@@ -9,7 +9,7 @@ before_install:
 script:
   - make compile
   - make test
-  - make coverage
+# - make coverage
   
 branches:
   only:
