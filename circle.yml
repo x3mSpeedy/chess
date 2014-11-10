@@ -4,7 +4,7 @@ dependencies:
   - sudo pip install cpp-coveralls
   - make compile
 
-tests:
+test:
   post:
     - make test
     - make coverage-xml
