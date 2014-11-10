@@ -12,8 +12,10 @@ test:
     - tail -n 30 output.txt
 
 deployment:
-  post:
-    - coveralls
+  production:
+    branch: master
+    commands:
+      - coveralls
     
 machine:
   environment:
