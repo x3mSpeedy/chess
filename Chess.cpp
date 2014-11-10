@@ -16,6 +16,8 @@
 
 using namespace std;
 
+exit(3);
+
 //initializing the pieces with an ID
 const int pawn = 1;
 const int rook = 2;
