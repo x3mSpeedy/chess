@@ -11,6 +11,7 @@ env:
   - NUM_MOVES=10
   - NUM_MOVES=100
   - NUM_MOVES=1000
+  - NUM_MOVES=10000
   
 script:
   - make compile
