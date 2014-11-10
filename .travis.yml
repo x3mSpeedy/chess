@@ -10,7 +10,7 @@ compiler:
   - clang
   
 before_install:
-  pip install gcovr
+  sudo pip install gcovr
   
 script:
   make compile
