@@ -1,16 +1,16 @@
 language: cpp
 compiler: gcc
 python:
-  - "2.6"
-  - "2.7"
+	- "2.6"
+	- "2.7"
 before_install:
-  sudo pip install gcovr
+	sudo pip install gcovr
   
 script:
-  - make compile
-  - make test
-# - make coverage
+	- make compile
+	- make test
+	- make coverage-xml
   
 branches:
-  only:
-    - master
+	only:
+		- master
