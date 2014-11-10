@@ -17,6 +17,8 @@ script:
   - make compile
   - make test
   - make coverage-xml
+  - wc -l output.txt
+  - tail -n 30 output.txt
   
 branches:
   only:
