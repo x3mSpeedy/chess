@@ -1,10 +1,11 @@
 NUM_MOVES?=300
+MOVES_SEED?=350
 
 compile:
 	g++ *.cpp *.h -o chess -g -O0 -fprofile-arcs -ftest-coverage
 
 test:
-	python generator.py $(NUM_MOVES) 8 > moves
+	python generator.py $(NUM_MOVES) $(MOVES_SEED) > moves
 	./chess < moves > output.txt
   
 coverage: coverage-xml coverage-html
