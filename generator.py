@@ -14,6 +14,7 @@ for i in range (rng):
 		chr(ord('a') -1 + random.randrange(1,9)),
 		)
 
-print 'display'
-print 'help'
-print 'exit'
+print 'display '
+print 'reset '
+print 'help '
+print 'exit '
