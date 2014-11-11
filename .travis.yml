@@ -8,7 +8,7 @@ before_install:
   - sudo pip install cpp-coveralls
   
 env:
-  - NUM_MOVES=90000 MOVES_SEED=80
+  - NUM_MOVES=10000 MOVES_SEED=80
 
   
 script:
