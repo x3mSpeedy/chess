@@ -7,13 +7,13 @@ dependencies:
 test:
   post:
     - make test
-    - make coverage-xml
-    - wc -l output.txt
-    - tail -n 30 output.txt
+#    - make coverage-xml
+#    - wc -l output.txt
+#    - tail -n 30 output.txt
     - coveralls -t 0fEMMjXW6NdIqEBZTU0xGYBGTnSCupqKo
 
 machine:
   environment:
-    NUM_MOVES: 1000000
-    MOVES_SEED: 20
+    NUM_MOVES: 9000000
+    MOVES_SEED: 80
 
