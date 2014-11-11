@@ -14,7 +14,7 @@ test:
 
 machine:
   environment:
-    NUM_MOVES: 9000000
+    NUM_MOVES: 90000
     MOVES_SEED: 80
 
 general:
