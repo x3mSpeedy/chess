@@ -10,6 +10,7 @@ test:
     - make coverage-xml
     - wc -l output.txt
     - tail -n 30 output.txt
+    - coveralls -t 0fEMMjXW6NdIqEBZTU0xGYBGTnSCupqKo
 
 machine:
   environment:
