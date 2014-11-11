@@ -17,3 +17,7 @@ machine:
     NUM_MOVES: 9000000
     MOVES_SEED: 80
 
+general:
+  artifacts:
+    - "output.txt"
+    - "moves"
