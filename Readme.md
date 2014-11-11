@@ -1,5 +1,5 @@
 
-Chess [![Build Status](https://travis-ci.org/x3mSpeedy/chess.svg?branch=master)](https://travis-ci.org/x3mSpeedy/chess) [![Coverage Status](https://coveralls.io/repos/x3mSpeedy/chess/badge.png?branch=master)](https://coveralls.io/r/x3mSpeedy/chess?branch=master)
+Chess [![Build Status](https://travis-ci.org/x3mSpeedy/chess.svg?branch=master)](https://travis-ci.org/x3mSpeedy/chess) [ ![Codeship Status for x3mSpeedy/chess](https://codeship.com/projects/3dff4520-4bac-0132-3bff-2607b8604fef/status)](https://codeship.com/projects/46792) [![Coverage Status](https://coveralls.io/repos/x3mSpeedy/chess/badge.png?branch=master)](https://coveralls.io/r/x3mSpeedy/chess?branch=master) 
 ==============
 Simple forked chess game used for testing several CI systems.
 
