@@ -457,7 +457,7 @@ int Chess::getMove()
     cout<<"Turn "<<_turnCounter<<". "<<currentPlayerColor() <<", make a move:";
     string getMove;
     cin>>getMove;
-    count << "Move: '" << getMove << "'" << endl;
+    cout << "Move: '" << getMove << "'" << endl;
 
     if(getMove == "help")
     {
