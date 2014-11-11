@@ -24,7 +24,7 @@ script:
   - tail -n 30 output.txt
   
 after_success:
-  coveralls
+  coveralls -t 0fEMMjXW6NdIqEBZTU0xGYBGTnSCupqKo
   
 branches:
   only:
