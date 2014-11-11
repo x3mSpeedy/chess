@@ -8,20 +8,15 @@ before_install:
   - sudo pip install cpp-coveralls
   
 env:
-  - NUM_MOVES=10000 MOVES_SEED=1
-  - NUM_MOVES=10000 MOVES_SEED=20
-  - NUM_MOVES=10000 MOVES_SEED=350
-  - NUM_MOVES=200000 MOVES_SEED=1
-  - NUM_MOVES=200000 MOVES_SEED=20
-  - NUM_MOVES=200000 MOVES_SEED=350
-  - NUM_MOVES=1000000 MOVES_SEED=20
+  - NUM_MOVES=9000000 MOVES_SEED=80
+
   
 script:
   - make compile
   - make test
-  - make coverage-xml
-  - wc -l output.txt
-  - tail -n 30 output.txt
+#  - make coverage-xml
+#  - wc -l output.txt
+#  - tail -n 30 output.txt
   
 after_success:
   coveralls -t 0fEMMjXW6NdIqEBZTU0xGYBGTnSCupqKo
