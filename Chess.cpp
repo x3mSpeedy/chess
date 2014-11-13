@@ -121,14 +121,6 @@ string Chess::currentPlayerColor()
 }//end of currentPlayer
 
 
-//returns the color of the opponent player
-string Chess::opponentPlayerColor()
-{
-  if(_currentPlayer == 1) return "BLACK";
-  return "WHITE";
-}//end of opponentPlayerColor
-
-
 //returns the pieces to be place on the chess board
 string Chess::displayPiece(int piece,int removeSpace = 0)
 {
