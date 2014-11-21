@@ -22,5 +22,5 @@ clear-all:
 
 profiler:
 	# valgrind --tool=callgrind --log-file=analysis.txt ./chess < moves > output.txt
-	valgrind --leak-check=yes --log-file=analysis.txt ./chess < moves > output.txt
-	cat analysis.txt
+	valgrind --leak-check=yes --log-file=analysis.txt --xml=yes --xml-file=./val.xml ./chess < moves > output.txt
+	cat val.xml
