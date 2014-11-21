@@ -1,4 +1,4 @@
-NUM_MOVES?=300
+NUM_MOVES?=10000
 MOVES_SEED?=350
 
 compile:
@@ -18,8 +18,8 @@ coverage-html:
 	genhtml coverage.info -o reports
 
 clear-all:
-	rm -rf coverage.info *.gcda *.gcno
+	rm -rf coverage.info *.gcda *.gcno *.gcov gmon.out chess cobertura.xml
 
 profiler:
-	gprof chess gmon.out > analysis.txt
+	gprof -b -p chess gmon.out > analysis.txt
 	cat analysis.txt
