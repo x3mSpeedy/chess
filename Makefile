@@ -2,7 +2,7 @@ NUM_MOVES?=10000
 MOVES_SEED?=350
 
 compile:
-	g++ *.cpp -o chess -g -O0 -fprofile-arcs -ftest-coverage -pg
+	g++ *.cpp -o chess -g -O0 -fprofile-arcs -ftest-coverage
 
 test:
 	python generator.py $(NUM_MOVES) $(MOVES_SEED) > moves
@@ -21,5 +21,6 @@ clear-all:
 	rm -rf coverage.info *.gcda *.gcno *.gcov gmon.out chess cobertura.xml
 
 profiler:
-	gprof -b -p chess gmon.out > analysis.txt
+	# valgrind --tool=callgrind --log-file=analysis.txt ./chess < moves > output.txt
+	valgrind --leak-check=yes --log-file=analysis.txt ./chess < moves > output.txt
 	cat analysis.txt

@@ -21,6 +21,17 @@ using namespace std;
 int main(int argc, const char* argv[])
 {
 
+			// profiling test
+			cout << "counting" << endl;
+			int i = 0;
+			int j = 0;
+			for (i = 0; i < 1000*1000*1000; i++) {
+				j = j + i;
+			}
+			cout << j << endl;
+			// profiling test
+
+
             //will display a welcome message.
             cout<<"             __________________________________________________________________________________"<<endl;
             cout<<"            |Welcome to the CHESS application. It is designed to be played by two human beings.|"<<endl;
