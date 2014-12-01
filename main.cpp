@@ -33,9 +33,8 @@ int main(int argc, const char* argv[])
 
             //this loop will keep on continuing the game until the user wins or wishes to quit.
             while(a.exitGame == 0) {
-                      while(a.status == 0) {
+                      while(a.status == 0)
                            a.getMove ();
-                      }
 
                         //display the winner and ask if the user wants to continue
                         cout << a.currentPlayerColor() << " is the WINNER! Do you wish to start a new game? [y/n]:";
