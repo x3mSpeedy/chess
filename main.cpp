@@ -43,21 +43,18 @@ int main(int argc, const char* argv[])
             a.printBoard();//after initializing the board printBoard will print the board layout on screen.
 
             //this loop will keep on continuing the game until the user wins or wishes to quit.
-            while(a.exitGame == 0)
-                 {
-                      while(a.status == 0) { a.getMove (); }
+            while(a.exitGame == 0) {
+                      while(a.status == 0)
+                           a.getMove ();
 
                         //display the winner and ask if the user wants to continue
                         cout << a.currentPlayerColor() << " is the WINNER! Do you wish to start a new game? [y/n]:";
                         string newGame = "y";
                         cin >> newGame;
-                        if(newGame == "y")
-                        {
+                        if(newGame == "y") {
                                 a.reset();
                                 a.printBoard();
-                        }
-                        else
-                        {
+                        } else {
                                 cout << "OKAY BYE! Come back when you can stay longer..."<<endl;
                                 a.exitGame = 1;
                         }
